@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         FILTER realtime connections on your router
 // @namespace    https://openwrt.org/docs/guide-user/luci/start
-// @version      0.0.1
+// @updateURL    https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-conns-openwrt-router.js
+// @downloadURL  https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-conns-openwrt-router.js
+// @version      0.0.2
 // @description  Filter some network traffic by ip-address or dns-name on your openwrt brick/router
 // @author       udoline
 // @match        http://192.168.1.1/cgi-bin/luci/admin/status/realtime/connections
