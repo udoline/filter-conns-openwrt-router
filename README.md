@@ -1,8 +1,8 @@
-# Filter the realtime network connections via web interface [Openwrt-Luci](https://openwrt.org/docs/guide-user/luci/start)
+# Filter the realtime network connections via web interface [Openwrt-LuCI](https://openwrt.org/docs/guide-user/luci/start)
 
 The motivation is *not to filter directly* on the Openwrt (brick) router, because the resources should not be used for this. 
-The data content is using via [Openwrt-Luci](https://openwrt.org/docs/guide-user/luci/start) in the user web browser client.  
-This a [Tampermonkey](https://tampermonkey.net/) custom user script that runs in your web browser client chrome or firefox as an extension or add-on that takes over the filtering of the resulting send network traffic via web interface [Openwrt-Luci](https://openwrt.org/docs/guide-user/luci/start).
+The data content is using via [Openwrt-LuCI](https://openwrt.org/docs/guide-user/luci/start) in the user web browser client.  
+This a [Tampermonkey](https://tampermonkey.net/) custom user script that runs in your web browser client chrome or firefox as an extension or add-on that takes over the filtering of the resulting send network traffic via web interface [Openwrt-LuCI](https://openwrt.org/docs/guide-user/luci/start).
 
 ## How todo this
 
