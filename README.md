@@ -10,6 +10,28 @@ Get the Tampermonkey extension for the supported browsers:
 - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo/)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
+## Quick install 
+
+Please click the extensions options page on the topbar of your choose browser
+
+![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/OpenWrt-luci-admin-status-realtime-connections.png)
+
+Now create a new [Tampermonkey](https://tampermonkey.net/) custom user script
+
+![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/Tampermonkey-UserScript-NEW.png)
+
+And then copy the content into your local [Tampermonkey](https://tampermonkey.net/) custom user script
+
+![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/Tampermonkey-UserScript-Content-Raw.png)
+
+And now go to your Openwrt-LuCI for realtime connections and click F5 for reload the HTML-page
+
+![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/OpenWrt-luci-admin-status-realtime-connections-additional-output.png)
+
+Now you can still consuming new additional information about active connections
+- portless relation
+- filtered content by special ports *maybe unwants ...*
+
 ## License
 
 The content of this repository is licensed under MIT.
