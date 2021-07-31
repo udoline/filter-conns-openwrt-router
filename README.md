@@ -20,7 +20,7 @@ Now create a new [Tampermonkey](https://tampermonkey.net/) custom user script
 
 ![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/Tampermonkey-UserScript-NEW.png)
 
-And then copy the content into your local [Tampermonkey](https://tampermonkey.net/) custom user script
+And then copy the content into your local [Tampermonkey](https://tampermonkey.net/) custom user script and click Ctrl-S for save the content
 
 ![Screenshot](https://github.com/udoline/filter-conns-openwrt-router/blob/main/doc/screenshot/Tampermonkey-UserScript-Content-Raw.png)
 
