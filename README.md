@@ -34,6 +34,6 @@ Now you can still consuming new additional information about active connections
 
 ## License
 
-The content of this repository is licensed under MIT.
+[The content of this repository is licensed under the European Union Public License 1.2.](https://choosealicense.com/licenses/eupl-1.2/)
 
 Copyright (c) 2021 udoline (1995)
