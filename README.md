@@ -9,6 +9,7 @@ This a [Tampermonkey](https://tampermonkey.net/) custom user script that runs in
 Get the Tampermonkey extension for the supported browsers:
 - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo/)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+- [Edge](edge://extensions/?q=tampermonkey)
 
 ## Quick install 
 
