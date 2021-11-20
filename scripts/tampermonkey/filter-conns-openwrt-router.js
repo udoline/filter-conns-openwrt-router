@@ -3,13 +3,14 @@
 // @namespace    https://openwrt.org/docs/guide-user/luci/start
 // @updateURL    https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-conns-openwrt-router.js
 // @downloadURL  https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-conns-openwrt-router.js
-// @version      0.0.3
+// @version      0.0.4
 // @description  Filter some network traffic by ip-address or dns-name on your OpenWrt brick/router is running OpenWrt 21.02.0-rc3
 // @author       udoline
 // @match        http://192.168.1.1/cgi-bin/luci/admin/status/realtime/connections
 // @match        https://192.168.1.1/cgi-bin/luci/admin/status/realtime/connections
 // @match        http://openwrt.lan/cgi-bin/luci/admin/status/realtime/connections
 // @match        https://openwrt.lan/cgi-bin/luci/admin/status/realtime/connections
+// @icon         https://192.168.1.1/luci-static/bootstrap/favicon.png
 // @grant        none
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
