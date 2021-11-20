@@ -54,10 +54,7 @@ function sortMapByKey(map) {
             if (this.readyState === 4 && this.status === 200
                 && !!this.responseText && this.responseText.length > 13) {
                 // console.log( h + " in " + "[event]'readystatechange' \n" + this.responseText );
-                if( $('div > button[class*="toggle-lookups"]').text() === 'Enable DNS lookups' ) {
-                    console.log( h + " in [event]'readystatechange' ... botton click: " + 'Enable DNS lookups');
-                    $('div > button[class*="toggle-lookups"]').click();
-                }
+                $('button:contains("Enable DNS lookups")').click();
                 let s = "";
                 $('tr[class*="cbi-rowstyle"]').each(function( i ) { // before div
                     // console.log( i + ' .. ' + $(this).text() );
