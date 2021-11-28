@@ -3,7 +3,7 @@
 // @namespace    http://openwrt.org/docs/guide-user/luci/start
 // @updateURL    https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-iptable-content-openwrt-router.js
 // @downloadURL  https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-iptable-content-openwrt-router.js
-// @version      0.0.3
+// @version      0.0.4
 // @description  Filter some network traffic content over the firewall by ip-address or dns-name on your OpenWrt brick/router is running OpenWrt 21.02.0-rc3
 // @author       udoline
 // @match        https://192.168.1.1/cgi-bin/luci/admin/status/iptables
@@ -75,19 +75,22 @@
 					});
                     // present collected data
                     if( map.size > 0 && ! $('select[name="ip_addr_src"]').length ) {
-                        let html = '<span style="padding-right:2;">\n<select name="ip_addr_src" style="width:121;" ';
+                        let html = '<select multiple="multiple" name="ip_addr_src" style="width:121px;margin-bottom:-8pt;" ';
                         html += ' title="Filter this content by selected ipaddress ...">\n'
                         html += '<option title="Remove selected filter ..." id="empty" value=""></option>\n';
                         for ( const [key, value] of sortMapByKey(map).entries() ) {
                             html += '<option title="Use this as filter ..." value="' + key + '">' + key + '</option>\n';
                         }
-                        html += '</select>\n</span>\n';
+                        html += '</select>\n<span/>\n';
                         $( html ).insertBefore( $( 'button[data-hide-empty]' ) );
                     }
                     // use picked ipaddress as filter
-                    const filterIpAddr = $( 'select[name="ip_addr_src"] option:selected' ).text();
-                    if( !!filterIpAddr && filterIpAddr !== "" ) {
-                        $( 'td[data-title="Source"]:not(:contains("' + filterIpAddr + '"))' ).closest("tr").remove();
+                    const filterIpAddrs = $( 'select[name="ip_addr_src"] option:selected' ).toArray().map( item => {
+                                              return ':not(:contains("' + item.value + '"))';
+                                          }).toString().replaceAll(',', '');
+                    // do action with the selection data
+                    if( !!filterIpAddrs && filterIpAddrs.length > 0 ) {
+                        $( 'td[data-title="Source"]' + filterIpAddrs ).closest("tr").remove();
                     }
 				}
 			}, false);
