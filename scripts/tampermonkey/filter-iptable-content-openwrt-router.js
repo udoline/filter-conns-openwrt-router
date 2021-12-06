@@ -3,7 +3,7 @@
 // @namespace    http://openwrt.org/docs/guide-user/luci/start
 // @updateURL    https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-iptable-content-openwrt-router.js
 // @downloadURL  https://raw.githubusercontent.com/udoline/filter-conns-openwrt-router/main/scripts/tampermonkey/filter-iptable-content-openwrt-router.js
-// @version      0.1.2
+// @version      0.1.3
 // @description  Filter some network traffic content over the firewall by ip-address or dns-name on your OpenWrt brick/router is running OpenWrt 21.02.0-rc3
 // @author       udoline
 // @match        https://192.168.1.1/cgi-bin/luci/admin/status/iptables
@@ -93,7 +93,7 @@
                         }
                         html += '</select>\n<span/>\n';
                         $(html).insertBefore($('button[data-hide-empty]'));
-                    } else if (map.size > 0 && $('select[name="ip_addr_src"]').length) {
+                    } else if (map.size > 0) {
                         const oldSelection = getSelectVal("ip_addr_src");
                         $('select[name="ip_addr_src"] > option').remove();
                         let html = '<option ' + (oldSelection.includes("") ? "selected" : "") + ' title="Remove selected filter ..." id="empty" value=""></option>\n';
